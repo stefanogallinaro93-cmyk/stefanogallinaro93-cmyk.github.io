@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stefano Gallinaro - Consulente Innovazione</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --light: #f5f6fa;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      color: var(--primary);
+      line-height: 1.6;
+      background: #fff;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: var(--accent);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 10%;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+    #chi-sono {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    #chi-sono img {
+      max-width: 300px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+    }
+    #chi-sono div {
+      flex: 2 1 300px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: auto;
+    }
+    form input, form textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 0.8rem;
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    form button:hover {
+      background: #217dbb;
+    }
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stefano Gallinaro</h1>
+    <p>Consulente in Innovazione, Open Innovation e Accesso ai Fondi Europei</p>
+  </header>
+
+  <nav>
+    <a href="#chi-sono">Chi Sono</a>
+    <a href="#esperienza">Esperienza</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <section id="chi-sono">
+    <img src="images/foto.jpg" alt="Foto di Stefano Gallinaro">
+    <div>
+      <h2>Chi Sono</h2>
+      <p>Sono Stefano Gallinaro, appassionato di innovazione, tecnologia e consulenza. 
+         Aiuto imprese e startup a crescere attraverso progetti di Open Innovation, 
+         accesso a fondi europei e strategie digitali.</p>
+    </div>
+  </section>
+
+  <section id="esperienza">
+    <h2>Esperienza</h2>
+    <p>Con diversi anni di esperienza nella consulenza e nello sviluppo di ecosistemi 
+       di innovazione, collaboro con università, Digital Innovation Hub e aziende per 
+       supportare la trasformazione digitale e l’adozione di nuove tecnologie.</p>
+  </section>
+
+  <section id="servizi">
+    <h2>Servizi</h2>
+    <div class="services">
+      <div class="card">💡 Supporto all’accesso a fondi europei</div>
+      <div class="card">🤝 Open Innovation e creazione di partnership</div>
+      <div class="card">⚙️ Consulenza su progetti di trasformazione digitale</div>
+      <div class="card">🎓 Formazione su innovazione e startup</div>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2>Contattami</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <textarea name="message" rows="5" placeholder="Il tuo messaggio" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Stefano Gallinaro - Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
